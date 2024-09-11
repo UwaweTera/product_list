@@ -2,26 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* fonts */
+
+@font-face {
+  font-family: 'RedHatText Italic';
+  src: url('/fonts/RedHatText-Italic-VariableFont_wght.ttf') format('truetype');
+  font-style: italic;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'RedHatText Variable';
+  src: url('/fonts/RedHatText-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
 }
+
+@font-face {
+  font-family: 'RedHatText Regular';
+  src: url('/fonts/RedHatText-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'RedHatText SemiBold';
+  src: url('/fonts/RedHatText-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'RedHatText Bold';
+  src: url('/fonts/RedHatText-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  color: black;
+  background: #F7F4F3;
+  font-family: 'RedHatText Regular', 'RedHatText Variable';
 }
