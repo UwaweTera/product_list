@@ -50,7 +50,7 @@ export default function Home() {
   };
 
   return (
-    <div className="px-2 md:w-[90%] md:mx-auto py-12">
+    <div className="px-2 md:w-[90%] md:mx-auto py-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="md:col-span-2 p-3 ">
           <h1

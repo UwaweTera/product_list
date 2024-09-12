@@ -10,10 +10,10 @@ const Product = ({ product, cartItems, onAddToCart, onRemoveFromCart }) => {
         <Image
           src={product.image}
           alt={product.name}
-          width={1000}
-          height={1000}
-          className={`w-full h-full rounded-xl ${
-            cartItems[product.id] ? "border-primary border" : ""
+          width={400}
+          height={400}
+          className={`w-full h-full  rounded-xl ${
+            cartItems[product.id] ? "border-primary border" : "border-none"
           } `}
         />
         <div className="absolute bottom-[-20px] w-full">
@@ -49,7 +49,7 @@ const Product = ({ product, cartItems, onAddToCart, onRemoveFromCart }) => {
       </div>
       <div className="mt-10">
         <p className="font-medium text-[#9E776B] ">{product.category}</p>
-        <h3 className="font-semibold text-xl text-[#251B18]">{product.name}</h3>
+        <h3 className="font-semibold text-[17px] text-[#3E2D28] ">{product.name}</h3>
         <p className="text-primary font-semibold text-sl">
           ${product.price.toFixed(2)}
         </p>
